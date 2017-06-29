@@ -1,0 +1,1 @@
+use assert to avoid sigseg
