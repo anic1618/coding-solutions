@@ -6,7 +6,7 @@
  *     TreeNode *right;
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
- *//*
+ */
 TreeNode* Solution::getSuccessor(TreeNode* A, int B) {
     TreeNode* root = A,*par=NULL,*nextB=NULL;
     while(root != NULL){
@@ -21,12 +21,12 @@ TreeNode* Solution::getSuccessor(TreeNode* A, int B) {
         }
     }
     
-    
-    if( !par || par->val > B) return par;
+    //null BST || closest node to B
+    if( !par || par->val != B) return par;
     else {
         return nextB;
     }
-}*/
+}
 
 TreeNode* Solution::getSuccessor(TreeNode* A, int B) {
     TreeNode* root = A,*succ=NULL;
