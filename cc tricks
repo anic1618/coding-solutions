@@ -1,2 +1,0 @@
-#use assert to avoid sigseg
-#vector<vector<int>> v  & vector<vector<int>> v(1,vector<int>) has  size =0  
